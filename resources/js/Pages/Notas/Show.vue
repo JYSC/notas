@@ -21,17 +21,18 @@
                         <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg p-10">
 						
                             <div class="min-w-full divide-y divide-gray-200 w-full">
+
                             <b>Titulo</b>
                             <p>{{ nota.titulo }}</p>
 
                             <b>Contenido</b>
                             <p>{{ nota.contenido }}</p>
-                            
-                            
-                            <b>Categoria</b>
-                            <p>{{ nota.category_name}}</p>
+
+                            <b>Categoría</b>
+                            <p>{{ nota.category_name }}</p>
+
                             </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -44,14 +45,13 @@
                 </inertia-link>
             </div>
         </div>
-    
+    </div>
     </app-layout>
 </template>
 
 <script>
     import { defineComponent } from 'vue'
     import AppLayout from '@/Layouts/AppLayout.vue'
-
     export default defineComponent({
         components: {
             AppLayout,
@@ -59,6 +59,5 @@
         props: {
             nota: Object
         }
-
     })
 </script>

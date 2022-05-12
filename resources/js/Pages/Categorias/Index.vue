@@ -37,7 +37,7 @@
                                     {{categoria.category_name}}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                    {{categoria.category_status}}
+                                    
                                     <span v-if="categoria.category_status == 1">Enabled</span>
                                     <span v-else>Disabled</span>
 
